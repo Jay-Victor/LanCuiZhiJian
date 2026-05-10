@@ -1,0 +1,242 @@
+# 揽萃知鉴 软件许可协议
+# LanCuiZhiJian Software License Agreement
+
+---
+
+## 中文版本
+
+**版权所有 © 2026 Jay-Victor。保留所有权利。**
+
+**版本：1.0 | 生效日期：2026年5月10日**
+
+---
+
+### 一、软件说明
+
+揽萃知鉴（LanCuiZhiJian）是一款基于 Tauri 2 构建的 AI 驱动智能文本处理桌面应用（Windows 平台），主要功能包括：
+
+- **8 大 AI 服务商支持**：内置 DeepSeek、ChatGPT、Anthropic、Google Gemini、通义千问、Kimi、豆包、智谱共 8 家服务商 25 个模型，支持自定义 OpenAI 兼容服务商
+- **5 阶段 AI 处理管线**：语义分块 → 信息提取 → 噪声过滤 → 语义增强 → 内容重构，分组并行执行，每阶段内置降级策略
+- **8 策略 URL 智能提取**：Rust 原生 HTTP（绕过 CORS）→ WebView 无头渲染 → 第三方 API → 浏览器请求 → Web Archive，3 层架构智能调度
+- **文本预处理管线**：7 步预处理（编码修复 / Unicode 归一化 / 特殊字符清除 / 空白归一化 / 50 条样板文本移除 / 行去重 / 结构保留），压缩比保护
+- **企业级请求优化**：熔断器 / LRU 缓存 / 请求去重 / 自适应超时 / 指数退避重试 / 并发控制 / 服务商健康度追踪
+- **三种输入方式**：URL 抓取、文本输入（最大 5000 字符）、文件导入（TXT/MD/DOCX/DOC/JSON/CSV/XML/HTML/LOG，最大 10MB）
+- **多格式导出**：Markdown / 纯文本 / Word 文档，通过 Tauri 文件对话框选择保存路径
+- **三语国际化**：简体中文 / English / 日本語，~662 个翻译键；浅色 / 深色 / 跟随系统主题
+- **任务管理**：6 状态 / 4 优先级 / 后台队列 / 断点续传 / 自动重试 / 批量操作
+- **双源更新**：GitHub / Gitee 双更新源
+
+---
+
+### 二、个人使用（免费）
+
+**允许：**
+
+- 个人学习、研究、知识管理
+- 学术研究和教学用途
+- 分享未修改的原版软件（需保留版权声明）
+
+**禁止：**
+
+- 未经作者允许的商业用途
+- 删除或修改版权声明
+- 声称软件为自己创作
+- 将软件用于产生经济收益的活动
+- 逆向工程、反编译或试图提取源代码
+
+**修改与衍生作品：**
+
+- 对软件进行任何修改或创作衍生作品，必须保留原作者署名和出处
+- 原作者：**Jay-Victor**，出处：**https://github.com/Jay-Victor/LanCuiZhiJian** 或 **https://gitee.com/Jay-Victor/LanCuiZhiJian**
+- 将修改版本或衍生作品开源，须获得原作者书面许可
+
+---
+
+### 三、商业使用授权
+
+商业使用需购买授权。商业使用包括但不限于：
+
+- 营利性企业内部使用
+- 用于产生经济收益的内容创作（如自媒体、付费课程）
+- 集成到商业产品或服务中
+- 为客户提供付费服务时使用
+
+**授权类型：**
+
+| 类型 | 适用范围 | 说明 |
+|------|----------|------|
+| 个人授权 | 单个个人 | 联系报价 |
+| 团队授权 | 2-20 人 | 联系报价 |
+| 企业授权 | 21 人以上 | 联系报价 |
+
+> 具体价格请联系获取报价。
+
+**特殊优惠：**
+
+- 教育机构、非营利组织：5 折
+- 开源项目贡献者：免费（需书面申请）
+- 政府机构：7 折
+
+**支付方式：** 联系后协商确定（支持支付宝、微信支付、银行转账）
+
+---
+
+### 四、联系方式
+
+| 渠道 | 信息 |
+|------|------|
+| 作者/许可方 | Jay-Victor |
+| 邮箱 | 18261738221@163.com |
+| QQ | 1061037299 |
+| QQ 群 | 1035424453 |
+| GitHub | https://github.com/Jay-Victor/LanCuiZhiJian |
+| Gitee | https://gitee.com/Jay-Victor/LanCuiZhiJian |
+
+---
+
+### 五、免责声明
+
+1. 本软件按"原样"提供，不附带任何明示或暗示的担保。
+2. 许可方不对因使用本软件而产生的任何直接或间接损害承担责任。
+3. 用户应自行备份重要数据，许可方不对数据丢失负责。
+4. 本软件的 AI 处理功能依赖用户自行配置的第三方 AI 服务商 API，许可方不对第三方服务的可用性、准确性或响应速度负责。用户需自行获取并管理各 AI 服务商的 API 密钥，相关费用由用户自行承担。
+5. 本软件在用户设备本地运行，API 密钥等配置信息存储在用户设备本地。使用 AI 处理功能时，文本内容将发送至用户所选的第三方 AI 服务商，用户应遵守相应服务商的使用条款和隐私政策。
+6. 软件自动更新检查功能仅查询版本信息，不传输任何用户数据。
+7. 用户违反本协议所产生的任何后果，由用户自行承担，与许可方无关。
+8. 对于用户修改后的软件版本或衍生作品，许可方不承担任何责任，相关责任由修改者承担。
+9. 用户因使用本软件侵犯第三方权益的，由用户自行承担法律责任。
+10. 许可方保留追究用户违约责任的权利。
+
+---
+
+### 六、其他条款
+
+1. 本协议受中华人民共和国法律管辖。
+2. 未尽事宜通过上述联系方式协商解决。
+3. 中英文版本如有冲突，以中文版本为准。
+4. 使用本软件即表示同意本协议条款。
+5. 许可方有权在通知后终止违反本协议用户的许可。
+
+---
+
+**使用本软件即表示您已阅读并同意本协议条款。**
+
+---
+
+## English Version
+
+**Copyright © 2026 Jay-Victor. All rights reserved.**
+
+**Version: 1.0 | Effective Date: May 10, 2026**
+
+---
+
+### 1. Software Description
+
+LanCuiZhiJian (揽萃知鉴) is an AI-powered intelligent text processing desktop application built on Tauri 2 (Windows platform), with the following features:
+
+- **8 AI Service Providers**: Built-in DeepSeek, ChatGPT, Anthropic, Google Gemini, Qwen, Kimi, Doubao, Zhipu — 8 providers with 25 models; custom provider compatible with OpenAI API format
+- **5-Stage AI Processing Pipeline**: Semantic Chunking → Information Extraction → Noise Filtering → Semantic Enhancement → Content Reconstruction, batch-parallel execution with per-stage fallback strategies
+- **8-Strategy URL Intelligent Extraction**: Rust native HTTP (bypasses CORS) → WebView headless rendering → Third-party API → Browser fetch → Web Archive, 3-layer intelligent scheduling
+- **Text Preprocessing Pipeline**: 7-step preprocessing (encoding fix / Unicode normalization / special character removal / whitespace normalization / 50-pattern boilerplate removal / line deduplication / structure preservation), compression ratio protection
+- **Enterprise-Grade Request Optimization**: Circuit breaker / LRU cache / request deduplication / adaptive timeout / exponential backoff retry / concurrency control / provider health tracking
+- **Three Input Methods**: URL extraction, text input (max 5,000 characters), file import (TXT/MD/DOCX/DOC/JSON/CSV/XML/HTML/LOG, max 10MB)
+- **Multi-Format Export**: Markdown / Plain Text / Word document, save path selected via Tauri file dialog
+- **Trilingual Internationalization**: Simplified Chinese / English / Japanese, ~662 translation keys; Light / Dark / System themes
+- **Task Management**: 6 states / 4 priorities / background queue / checkpoint resume / auto-retry / batch operations
+- **Dual-Source Updates**: GitHub / Gitee dual update sources
+
+---
+
+### 2. Personal Use (Free)
+
+**Permitted:**
+
+- Personal learning, research, knowledge management
+- Academic research and teaching
+- Sharing unmodified original software (with copyright notice preserved)
+
+**Prohibited:**
+
+- Commercial use without the author's permission
+- Removing or modifying copyright notices
+- Claiming authorship
+- Using for revenue-generating activities
+- Reverse engineering, decompiling, or attempting to extract source code
+
+**Modifications & Derivative Works:**
+
+- Any modifications or derivative works must retain attribution to the original author and source
+- Original Author: **Jay-Victor**, Source: **https://github.com/Jay-Victor/LanCuiZhiJian** or **https://gitee.com/Jay-Victor/LanCuiZhiJian**
+- Open-sourcing modified versions or derivative works requires written permission from the original author
+
+---
+
+### 3. Commercial License
+
+Commercial use requires a license. Commercial use includes but is not limited to:
+
+- Internal use within for-profit organizations
+- Content creation for economic gain (e.g., social media, paid courses)
+- Integration into commercial products or services
+- Use when providing paid services to clients
+
+**License Types:**
+
+| Type | Scope | Notes |
+|------|-------|-------|
+| Individual | Single person | Contact for quote |
+| Team | 2-20 users | Contact for quote |
+| Enterprise | 21+ users | Contact for quote |
+
+> Contact for pricing details.
+
+**Special Discounts:**
+
+- Educational institutions, non-profits: 50% off
+- Open source contributors: Free (written application required)
+- Government agencies: 30% off
+
+**Payment Methods:** Determined upon contact (Alipay, WeChat Pay, Bank Transfer supported)
+
+---
+
+### 4. Contact
+
+| Channel | Information |
+|---------|-------------|
+| Author/Licensor | Jay-Victor |
+| Email | 18261738221@163.com |
+| QQ | 1061037299 |
+| QQ Group | 1035424453 |
+| GitHub | https://github.com/Jay-Victor/LanCuiZhiJian |
+| Gitee | https://gitee.com/Jay-Victor/LanCuiZhiJian |
+
+---
+
+### 5. Disclaimer
+
+1. The software is provided "as is" without any express or implied warranties.
+2. The Licensor shall not be liable for any direct or indirect damages arising from the use of this software.
+3. Users are responsible for backing up their important data; the Licensor shall not be liable for data loss.
+4. The AI processing features of this software rely on third-party AI service APIs configured by the user. The Licensor shall not be liable for the availability, accuracy, or response speed of third-party services. Users are responsible for obtaining and managing API keys for each AI service provider, and any associated costs shall be borne by the user.
+5. This software runs locally on the user's device. API keys and configuration data are stored locally. When using AI processing features, text content will be sent to the user's selected third-party AI service provider. Users shall comply with the respective provider's terms of use and privacy policy.
+6. The automatic update check feature only queries version information and does not transmit any user data.
+7. Users shall bear all consequences arising from violation of this agreement; the Licensor shall not be liable.
+8. The Licensor shall not be liable for any modified versions or derivative works created by users; such liability shall be borne by the modifier.
+9. Users shall bear legal liability for any infringement of third-party rights arising from the use of this software.
+10. The Licensor reserves the right to pursue legal remedies for user's breach of this agreement.
+
+---
+
+### 6. Miscellaneous
+
+1. This agreement is governed by the laws of the People's Republic of China.
+2. Unresolved matters shall be negotiated through the contact channels above.
+3. In case of conflict between Chinese and English versions, the Chinese version prevails.
+4. By using this software, you agree to the terms of this agreement.
+5. The Licensor reserves the right to terminate the license of users who violate this agreement upon notice.
+
+---
+
+**By using this software, you acknowledge that you have read and agree to the terms of this agreement.**

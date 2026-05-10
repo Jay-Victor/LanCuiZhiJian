@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "揽萃知鉴",
+  "version": "0.1.0",
+  "identifier": "com.lanzhan.jijian",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "揽萃知鉴",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 1024,
+        "minHeight": 600,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: https: data:; connect-src 'self' https://api.github.com https://github.com https://gitee.com https://*.gitee.com https://api.openai.com https://api.deepseek.com https://api.anthropic.com https://generativelanguage.googleapis.com https://ark.cn-beijing.volces.com https://api.moonshot.cn https://dashscope.aliyuncs.com https://open.bigmodel.cn https://r.jina.ai https://web.archive.org https://api.firecrawl.dev; font-src 'self' data:"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico",
+      "icons/icon.png"
+    ],
+    "copyright": "© 2026 揽萃知鉴. All rights reserved.",
+    "category": "Productivity",
+    "shortDescription": "AI驱动的智能文本处理桌面应用",
+    "longDescription": "揽萃知鉴是一款基于AI技术的智能文本处理桌面应用，支持URL抓取、文本处理、文件导入等多种输入方式，通过AI语义分析实现文本分段、提取、过滤、增强和重构，助您从海量信息中提炼精华。",
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": "",
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper"
+      },
+      "nsis": {
+        "displayLanguageSelector": false,
+        "installerIcon": "icons/icon.ico",
+        "headerImage": null,
+        "sidebarImage": null,
+        "installMode": "currentUser",
+        "languages": ["SimpChinese", "English"]
+      }
+    }
+  }
+}
